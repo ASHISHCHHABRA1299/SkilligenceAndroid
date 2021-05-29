@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/bg"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ASHISH CHHABRA"
+        android:layout_below="@id/image"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        />
+
+    <TextView
+        android:id="@+id/desg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SOFTWARE ENGINEER"
+        android:layout_below="@id/name"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="20dp"
+        android:textStyle="italic|bold"
+        android:textColor="@color/red"
+        />
+
+    <TextView
+        android:id="@+id/edu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="education"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/desg"
+        />
+
+    <TextView
+        android:id="@+id/col"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/red"
+        android:text="@string/collegename"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/edu"
+        />
+
+    <TextView
+        android:id="@+id/branch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/red"
+        android:textStyle="italic|bold"
+        android:textAllCaps="true"
+        android:text="Computer Science"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/col"
+        />
+
+       <TextView
+           android:id="@+id/sessionyear"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="2016-2020"
+           android:textSize="20dp"
+           android:textAllCaps="true"
+           android:textStyle="italic|bold"
+           android:textColor="@color/red"
+           android:layout_marginTop="10dp"
+           android:layout_below="@id/col"
+           android:layout_alignParentRight="true"
+           android:layout_marginRight="15dp"
+           />
+        <TextView
+            android:id="@+id/course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COURSES"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textSize="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/branch"
+            />
+        <TextView
+            android:id="@+id/org"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SKILLIGENCE"
+            android:textSize="20dp"
+            android:textColor="@color/red"
+            android:textStyle="italic|bold"
+            android:layout_below="@id/course"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/coursename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/org"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/red"
+            android:textStyle="italic|bold"
+            android:textSize="20dp"
+            android:text="ANDROID DEVELOPMENT"
+
+            />
+        <TextView
+            android:id="@+id/courseyear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/red"
+            android:textStyle="italic|bold"
+            android:textSize="20dp"
+            android:text="2021"
+            android:layout_below="@id/org"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            />
+
+    <Button
+        android:id="@+id/opengtb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/coursename"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#161617"
+        android:padding="14dp"
+        android:text="OPEN GITHUB"
+        android:textSize="20dp"
+        android:textStyle="bold"
+         />
+
+    <Button
+        android:id="@+id/openlnkdn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/coursename"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#1E88E5"
+        android:padding="14dp"
+        android:text="OPEN LINKEDIN"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+</RelativeLayout>
