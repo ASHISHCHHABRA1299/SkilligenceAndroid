@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e9c46a"
+    tools:context=".profile">
+
+ <ImageView
+     android:id="@+id/profileimage"
+     android:layout_width="250dp"
+     android:layout_height="250dp"
+     android:layout_gravity="center"
+     android:layout_marginTop="50dp"
+     tools:srcCompat="@tools:sample/avatars"
+     />
+    <TextView
+        android:id="@+id/bio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BIO: I LOVE TO CODE"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+    <TextView
+        android:id="@+id/followers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="FOLLOWERS: 0"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:layout_marginLeft="45dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/following"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="FOLLOWING: 0"
+        android:textAllCaps="true"
+        android:layout_marginLeft="45dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+    </LinearLayout>
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/recyclerview"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="#ffffff"
+       android:layout_marginTop="10dp"
+       tools:listitem="@layout/repoitem"
+       android:scrollbars="vertical"
+       />
+</LinearLayout>
